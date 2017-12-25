@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('address1');
             $table->string('address2');
+            $table->string('postalcode');
             $table->string('phone');
             $table->enum('is_active',['0','1'])->comment('0-inactive,1-active');
             $table->enum('is_approved',['0','1'])->comment('0-unapproved,1-approved');

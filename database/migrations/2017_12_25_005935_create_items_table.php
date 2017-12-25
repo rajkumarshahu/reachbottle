@@ -16,7 +16,7 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->increments('id');
             $table->string('container_type');
-            $table->string('deposit_value')->comment('price of item');
+            $table->double('deposit_value')->comment('price of item');
             $table->string('return_container_type');
             $table->timestamps();
         });
