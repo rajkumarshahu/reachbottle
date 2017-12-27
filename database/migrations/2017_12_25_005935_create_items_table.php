@@ -18,6 +18,7 @@ class CreateItemsTable extends Migration
             $table->string('container_type');
             $table->double('deposit_value')->comment('price of item');
             $table->string('return_container_type');
+            $table->enum('is_active',['0','1'])->comment('0 - inactive, 1 - active');
             $table->timestamps();
         });
     }
