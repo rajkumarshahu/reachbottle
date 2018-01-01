@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
             'address1' => '240 Wellesley Street east',
             'address2' => 'apt: 0921',
             'postalcode' => 'M4X 1G5',
-            'phone' => '4165094662',
+            'phone' => '6473027237',
             'is_active'=>'1',
             'is_approved'=>'1',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),

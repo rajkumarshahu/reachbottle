@@ -15,16 +15,11 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fname');
-            $table->string('lname');
-            $table->string('address1');
-            $table->string('address2');
-            $table->string('postalcode');
-            $table->string('email');
-            $table->string('phoneno');
+            $table->integer('user_id');
             $table->dateTime('order_date_time');
             $table->dateTime('delivery_schedule');
             $table->double('order_total');
+            $table->enum('order_served',['0','1'])->default('0')->comment('0-not served,1-served');
             $table->timestamps();
         });
     }

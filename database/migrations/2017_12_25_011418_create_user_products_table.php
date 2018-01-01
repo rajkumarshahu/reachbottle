@@ -17,6 +17,7 @@ class CreateUserProductsTable extends Migration
             $table->increments('id');
             $table->integer('order_id');
             $table->integer('item_id');
+            $table->integer('qty');
             $table->timestamps();
         });
     }
